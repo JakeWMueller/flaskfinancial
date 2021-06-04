@@ -3,7 +3,7 @@ import yfinance as yf
 from os import environ
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('DATABASE_URL') or 'sqlite:///myDB.db/'
+app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('DEPLOY_DATABASE_URL') or 'sqlite:///myDB.db/'
 
 
 
